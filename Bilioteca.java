@@ -11,7 +11,17 @@ public class Bilioteca {
        libros.add("Orgullo y prejuicio");
        libros.add("Crimen y castigo");
 
-       System.out.println(libros);
+       for (String libro :libros){
+           System.out.println("Libros disponibles: " + libro);
+       }
+
+       String buscarLibro = "Orgullo y prejuicio";
+
+       boolean buscar  = libros.contains(buscarLibro);
+       System.out.println(buscar);
+
+       System.out.println(libros.size());
+
 
     }
 }
